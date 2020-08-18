@@ -6,7 +6,7 @@ $(document).ready(function() {
     if(countTo < countBy) {
       $("span#results").text("Count to needs to be great than count by");
     } else {
-      for(let i = 0; i <= countTo; i += countBy) {
+      for(let i = countBy; i <= countTo; i += countBy) {
         $("span#results").append("<li>" + i);
       }
     }
