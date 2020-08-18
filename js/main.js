@@ -4,3 +4,10 @@ function countToBy(countTo, countBy) {
   }
 }
 
+$(document).ready(function() {
+  $("#counter-form").submit(function(event) {
+    event.preventDefault();
+    const countTo = parseInt($("#countTo").val());
+    console.log(countTo);
+  });
+});
